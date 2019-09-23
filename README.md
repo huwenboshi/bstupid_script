@@ -1,0 +1,1 @@
+# bstupid_script
