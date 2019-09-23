@@ -23,6 +23,7 @@ And the 2nd column is the distance to the nearest exon.
 The basic idea of how this works is as follows:
 
 1. Maintain 2 pointers pointing to 2 neighboring exons: exon A and exon B
-2. If base pair position is within A, set distance to 0
-3. If base pair is between A and B, take min distance to A end and B start
-4. After processing (exon B start - 1), advance pointers to point exons B and C
+2. Iterating from position 0 to the length of chromosome
+3. If base pair position is within A, set distance to 0
+4. If base pair is between A and B, take min distance to A end and B start
+5. After processing (exon B start - 1), advance pointers to point exons B and C
