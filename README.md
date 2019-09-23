@@ -17,3 +17,12 @@ chromosome to speed up computation.
 chromosome, and the length of the chromosome. The output will be a gzipped
 text file with 2 columns. The 1st column is the 0-based base pair position.
 And the 2nd column is the distance to the nearest exon.
+
+## calc_bstupid.py
+
+The basic idea of how this works is as follows:
+
+1. Maintain 2 pointers pointing to 2 neighboring exons: exon A and exon B
+2. If base pair position is within A, set distance to 0
+3. If base pair is between A and B, take min distance to A end and B start
+4. After processing (exon B start - 1), advance pointers to point exons B and C
