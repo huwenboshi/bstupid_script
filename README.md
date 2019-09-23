@@ -27,3 +27,4 @@ The basic idea of how this works is as follows:
 3. If base pair position is within A, set distance to 0
 4. If base pair is between A and B, take min distance to A end and B start
 5. After processing (exon B start - 1), advance pointers to point exons B and C
+6. Repeat until all base pairs are processed
